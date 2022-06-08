@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body {
+    font-family: sans-serif;
+    background-color: #f3f3f3:
+    margin: 1em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: transperent;
+}
+li, a, button {
+    font-family: 'Abel', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #f3f3f3;
+}
+.logo {
+    cursor: pointer;
+}
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav li a {
+    transition: all 0.3s ease 0s;
+}
+.nav li a:hover {
+    color: grey;
+}
+button {
+    padding: 20px 29px;
+    background-color: #FFFD00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: black;
+    color: White;
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#GridNummerplade {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 30px;
+  background-color: #f3f3f3;
+  color: #565656;
+  grid-gap: 1px;
+    grid-template-areas:
+    "nummerplade"
+    "billedNrplade"
+    ;
+
+}
+
+#Gridklistermaerke {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding-left: 30px;
+  background-color: #f3f3f3;
+  color: #565656;
+  grid-gap: 1px;
+    grid-template-areas:
+    "klistermaerke"
+    "billedKlistermaerke";
+}
+
+#GridStreamer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #f3f3f3;
+  background-image: url("luphvid100.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding: 30px;
+  color: #565656;
+  grid-gap: 1px;
+    grid-template-areas:
+    "streamere"
+    "billedstreamer";
+}
+
+#nummerplade {
+  grid-area: nummerplade;
+
+}
+
+#billedNrplade {
+  grid-area: billedNrplade;
+}
+
+#klistermaerke {
+  grid-area: klistermaerke;
+
+}
+
+#billedKlistermaerke {
+  grid-area: billedKlistermaerke;
+}
+
+#streamere {
+  grid-area: streamere;
+
+}
+
+#billedstreamer {
+  grid-area: billedstreamer;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  color: #565656;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1em;
+  color: #565656;
+  text-align: left;
+  line-height: 200%;
+}
+#toptekst {
+  font-family: 'Abel', sans-serif;
+  font-size: 1em;
+  color: #565656;
+  background-color: #f3f3f3;
+  text-align: center;
+  line-height: 200%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.produktimg {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 50px;
+  margin: auto:
+}
+
+#klistermaerkeimg {
+  max-width: 70%;
+  max-height: 70%;
+  padding-top: 50px;
+  margin: auto:
+}
+
+@media screen and (min-width: 550px) {
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1em;
+  color: #565656;
+  text-align: left;
+  line-height: 200%;
+}
+
+#GridNummerplade {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 30px;
+  background-color: #f3f3f3;
+  color: #565656;
+  grid-gap: 1px;
+    grid-template-areas:
+    "nummerplade"
+    "billedNrplade"
+    ;
+
+}
+
+#Gridklistermaerke {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding-left: 30px;
+  background-color: #f3f3f3;
+  color: #565656;
+  grid-gap: 1px;
+    grid-template-areas:
+    "klistermaerke"
+    "billedKlistermaerke";
+}
+
+#GridStreamer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #f3f3f3;
+  background-image: url("luphvid100.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding: 30px;
+  color: #565656;
+  grid-gap: 1px;
+    grid-template-areas:
+    "streamere"
+    "billedstreamer";
+}
+  #toptekst {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
+    color: #565656;
+    background-color: #f3f3f3;
+    text-align: center;
+    line-height: 200%;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+    p {
+      font-family: 'Abel', sans-serif;
+      font-size: 1.3em;
+      color: #565656;
+      text-align: left;
+      line-height: 200%;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: transperent;
+    }
+    li, a, button {
+        font-family: 'Abel', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        padding-left: 250px;
+        padding-right: 250px;
+        background-color: #f3f3f3;
+    }
+    .logo {
+        cursor: pointer;
+    }
+    .nav li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    .nav li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav li a:hover {
+        color: grey;
+    }
+    button {
+        padding: 20px 29px;
+        background-color: #FFFD00;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    button:hover {
+        background-color: black;
+        color: White;
+    }
+    .logo {
+      max-width: 30%;
+      max-height: 30%;
+    }
+    #GridNummerplade {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding: 150px;
+      background-color: #f3f3f3;
+      color: #565656;
+      grid-gap: 50px;
+        grid-template-areas:
+        "nummerplade billedNrplade"
+        ;
+    }
+    #Gridklistermaerke {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding-left: 150px;
+      background-color: #f3f3f3;
+      color: #565656;
+      grid-gap: 50px;
+        grid-template-areas:
+        "klistermaerke billedKlistermaerke";
+    }
+    #GridStreamer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      background-color: #f3f3f3;
+      background-image: url("luphvid100.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      padding: 150px;
+      color: #565656;
+      grid-gap: 50px;
+        grid-template-areas:
+        "streamere billedstreamer";
+    }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
