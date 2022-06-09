@@ -26,7 +26,7 @@ header {
     padding: 10px 10px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: #f3f3f3;
+    background-color: #96897b30;
 }
 .logo {
     cursor: pointer;
@@ -64,6 +64,10 @@ button:hover {
   grid-template-rows: 1fr;
   padding: 30px;
   background-color: #f3f3f3;
+  background-image: url("luphvid35%.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   color: #565656;
   grid-gap: 1px;
     grid-template-areas:
@@ -140,13 +144,14 @@ h1 {
 }
 h2 {
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 p {
   font-family: 'Abel', sans-serif;
   font-size: 1em;
   color: #565656;
-  text-align: left;
+  text-align: center;
   line-height: 200%;
 }
 #toptekst {
@@ -163,44 +168,54 @@ p {
   max-width: 100%;
   max-height: 100%;
   padding-top: 50px;
-  margin: auto:
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #klistermaerkeimg {
   max-width: 70%;
   max-height: 70%;
-  padding-top: 50px;
-  margin: auto:
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 550px) {
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
 p {
   font-family: 'Abel', sans-serif;
   font-size: 1em;
   color: #565656;
-  text-align: left;
+  text-align: center;
   line-height: 200%;
 }
 
 #GridNummerplade {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: ;
   padding: 30px;
   background-color: #f3f3f3;
+  background-image: url("luphvid35%.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   color: #565656;
   grid-gap: 1px;
     grid-template-areas:
     "nummerplade"
     "billedNrplade"
     ;
-
 }
 
 #Gridklistermaerke {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: ;
   padding-left: 30px;
   background-color: #f3f3f3;
   color: #565656;
@@ -213,7 +228,7 @@ p {
 #GridStreamer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: ;
   background-color: #f3f3f3;
   background-image: url("luphvid100.png");
   background-repeat: no-repeat;
@@ -239,49 +254,53 @@ p {
 }
 
 @media screen and (min-width: 1000px) {
-    p {
+  h2 {
+      font-family: 'Roboto', sans-serif;
+      text-align: left;
+  }
+  p {
       font-family: 'Abel', sans-serif;
       font-size: 1.3em;
       color: #565656;
       text-align: left;
       line-height: 200%;
     }
-    * {
+  * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
         background-color: transperent;
     }
-    li, a, button {
+  li, a, button {
         font-family: 'Abel', sans-serif;
         font-weight: 500;
         font-size: 20px;
         color: black;
         text-decoration: none;
     }
-    header {
+  header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 10px;
         padding-left: 250px;
         padding-right: 250px;
-        background-color: #f3f3f3;
+        background-color: #96897b30;
     }
-    .logo {
+  .logo {
         cursor: pointer;
     }
-    .nav li {
+  .nav li {
         display: inline-block;
         padding: 0px 20px;
     }
-    .nav li a {
+  .nav li a {
         transition: all 0.3s ease 0s;
     }
-    .nav li a:hover {
+  .nav li a:hover {
         color: grey;
     }
-    button {
+  button {
         padding: 20px 29px;
         background-color: #FFFD00;
         border: none;
@@ -289,18 +308,18 @@ p {
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
-    button:hover {
+  button:hover {
         background-color: black;
         color: White;
     }
-    .logo {
+  .logo {
       max-width: 30%;
       max-height: 30%;
     }
-    #GridNummerplade {
+  #GridNummerplade {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows:;
       padding: 150px;
       background-color: #f3f3f3;
       color: #565656;
@@ -309,10 +328,10 @@ p {
         "nummerplade billedNrplade"
         ;
     }
-    #Gridklistermaerke {
+  #Gridklistermaerke {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows:;
       padding-left: 150px;
       background-color: #f3f3f3;
       color: #565656;
@@ -320,10 +339,10 @@ p {
         grid-template-areas:
         "klistermaerke billedKlistermaerke";
     }
-    #GridStreamer {
+  #GridStreamer {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows:;
       background-color: #f3f3f3;
       background-image: url("luphvid100.png");
       background-repeat: no-repeat;
@@ -423,4 +442,9 @@ p {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+.billedslider {
+  width: 100%;
 }
